@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThisIsPrem</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="fashion.css">
+  <link rel="stylesheet" href="transitions.css">
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  <script defer src="transitions.js"></script>
+  <script>
+    function validateEmail(event) {
+      const email = document.getElementById('email').value;
+      if (!email.includes('@')) {
+        alert('Please enter a valid email address with "@" symbol.');
+        event.preventDefault(); // Prevent form submission
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.registration-form form');
+      form.addEventListener('submit', validateEmail);
+    });
+  </script>
+</head>
+<body data-barba="wrapper">
+  <header>
+    <div class="container container-nav">
+      <div class="site-title">
+        <h1>Bloggo</h1>
+        <p class="subtitle">Blog for people interested in Lores</p>
+      </div>
+    </div>
+  </header>
+  <main data-barba="container" data-barba-namespace="home">
+    <section>
+      <nav>
+        <ul>
+          <li><a href="home.html" data-barba-link class="transition-link">Home</a></li>
+          <li><a href="news.html" data-barba-link class="transition-link">News bits</a></li>
+          <li><a href="aboutMe.html" data-barba-link class="transition-link">About Me</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>About The Blog</h1>
+        <p>You have visited a blog of one of a kind</p>
+        <a href="news.html" data-barba-link>The Biggest Failures of Gaming Companies</a>
+        <p><iframe src="https://www.wikipedia.org" width="600" height="400" frameborder="0" allowfullscreen></iframe></p>
+      </article>
+      <!-- New Content Section -->
+      <div class="container">
+        <!-- Education Qualification Table -->
+        <h2>Education Qualification</h2>
+        <table>
+          <tr>
+            <th>Degree</th>
+            <th>Department</th>
+            <th>College</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Bachelor's</td>
+            <td><input type="text" placeholder="Department" style="width:92.5%;padding:8px;"></td>
+            <td><input type="text" placeholder="Enter your college name" style="width:92.5%;padding:8px;"></td>
+            <td><input type="text" placeholder="Year" style="width:92.5%;padding:8px;"></td>
+          </tr>
+          <tr>
+            <td>Master's</td>
+            <td><input type="text" placeholder="Department" style="width:92.5%;padding:8px;"></td>
+            <td><input type="text" placeholder="Enter your college name" style="width:92.5%;padding:8px;"></td>
+            <td><input type="text" placeholder="Year" style="width:92.5%;padding:8px;"></td>
+          </tr>
+          <tr>
+            <td>PhD</td>
+            <td><input type="text" placeholder="Department" style="width:92.5%;padding:8px;"></td>
+            <td><input type="text" placeholder="Enter your college name" style="width:92.5%;padding:8px;"></td>
+            <td><input type="text" placeholder="Year" style="width:92.5%;padding:8px;"></td>
+          </tr>
+        </table>
+        <!-- Registration Form -->
+        <div class="registration-form">
+          <h2>Registration Form</h2>
+          <form action="submit_form.php" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password.." required>
+            <input type="submit" value="REGISTER">
+          </form>
+        </div>
+      </div>
+        <!-- End of New Content Section -->
+        <article>
+        <article class="story-article">
+          <h1>Read my latest story</h1>
+          <div class:"article-content">
+          <h1 class:"article-title">The Last Ride of Arwen</h1>
+          <p class="interactive">
+            In the twilight years of the Third Age, after the One Ring was destroyed and Sauron defeated, Middle-earth entered a time of peace and rebuilding. Aragorn, now King Elessar, ruled over Gondor and Arnor with wisdom and justice. At his side was Arwen Undómiel, his beloved queen.
+          </p>
+          <p class="interactive">
+            The years passed swiftly, as they do for men. King Elessar’s reign was long and prosperous, and the White Tree of Gondor flourished once more. But for Arwen, an immortal elf who had chosen a mortal life for the love of Aragorn, time was a relentless and cruel companion.
+          </p>
+          <p class="interactive">
+            One crisp autumn day, as the leaves of the White Tree began to turn gold, Arwen stood on the balcony of Minas Tirith, looking out over the lands of her husband’s kingdom. The sight filled her with both pride and sorrow, for she knew her time with Aragorn was drawing to an end.
+          </p>
+          <p class="interactive">
+            King Elessar, though still strong and vigorous in spirit, felt the weight of years upon his shoulders. He called for his queen, and they walked together in the gardens, speaking of times past and the uncertain future.
+          </p>
+          <p class="interactive">
+            “Arwen, my Evenstar,” he said softly, “my time is near. I can feel it in my bones. It is a bittersweet knowledge, for I do not fear death, but I grieve to leave you.”
+          </p>
+          <p class="interactive">
+            Arwen, with tears in her eyes, took his hand. “You have given me a life filled with love and joy, Estel. I do not regret my choice. Yet, I cannot bear the thought of losing you.”
+          </p>
+          <p class="interactive">
+            Aragorn embraced her. “I will await you in the halls of Mandos, where we will be reunited in the end. But you must be strong, my love. Gondor will need your wisdom.”
+          </p>
+          <p class="interactive">
+            The following winter, as snow blanketed the White City, King Elessar lay down in the House of Kings and surrendered his life willingly, passing into the afterlife with grace and dignity. The people of Gondor mourned deeply for their king, who had brought them out of darkness and into a golden age.
+          </p>
+          <p class="interactive">
+            Arwen’s grief was profound. She remained in Minas Tirith for a time, her heart heavy with sorrow. Eventually, she realized she could not stay in the city where every corner held memories of her beloved. She bade farewell to her children and the people of Gondor and set out for Lothlórien, seeking solace among the golden woods where she had spent much of her youth.
+          </p>
+          <p class="interactive">
+            Lothlórien, however, was no longer the same. Galadriel and Celeborn had departed, and the woods were fading, losing their enchantment. Arwen wandered alone, her spirit heavy with the weight of mortality. The timeless beauty of the forest had dimmed, mirroring her own fading light.
+          </p>
+          <p class="interactive">
+            In the heart of the forest, Arwen found the hill of Cerin Amroth, where she and Aragorn had plighted their troth so many years ago. She lay down on the hill, her strength ebbing away, and closed her eyes. The memory of Aragorn’s face, his smile, his love, filled her mind.
+          </p>
+          <p class="interactive">
+            And there, in the fading glory of Lothlórien, Arwen Undómiel passed away, her spirit journeying to the halls of her forefathers. Her body was found by the elves who still dwelt in the forest, and they buried her on Cerin Amroth, under the golden leaves.
+          </p>
+          <p class="interactive">
+            The world of men continued to flourish, the legacy of Aragorn and Arwen enduring through their descendants. Their love story became legend, a tale of sacrifice, courage, and enduring love that transcended the ages.
+          </p>
+          <p class="interactive">
+            And in the West, beyond the circles of the world, Aragorn and Arwen were reunited, their spirits entwined forever in a place where there is no more sorrow, and where love reigns eternal.
+          </p>
+          </div>
+        </article>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-container">
+      <div class="footer-col">
+        <h3>Posted by:</h3>
+        <p>Prem</p>
+        <h3>Email:</h3>
+        <p><a href="mailto:premchicago@gmail.com">premchicago@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Connect with me:</h3>
+        <p><a href="https://discord.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i> Discord: theactualhisa</a></p>
+        <p><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter: @hisa</a></p>
+      </div>
+    </section>
+  </footer>
+</body>
